@@ -1,5 +1,7 @@
 package model;
 
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -33,6 +35,12 @@ public class Doctor extends User {
     @Override
     public String toString() {
         return super.toString() + "\nSpeciality: " + speciality + "\nAvailable: " + availableAppointments.toString();
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del Hospital: Cruz Roja");
+        System.out.println("Departamento: Cancerología");
     }
 
     public static class AvailableAppointment{

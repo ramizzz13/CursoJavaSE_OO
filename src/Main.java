@@ -16,17 +16,21 @@ public class Main {
         System.out.println(myDoctor);
 
         User user = new Doctor("Kristal", "kris@gmail.com") ;
+        user.showDataUser();
+
+        User userPa = new Patient("Kristal", "kris@gmail.com") ;
+        userPa.showDataUser();
 
        /* for (model.Doctor.AvailableAppointment aA : myDoctor.getAvailableAppointments()) {
             System.out.println(aA.getDate() + " " + aA.getTime());
         }*/
 
 
-        System.out.println();
+        /*System.out.println();
         System.out.println();
         Patient patient = new Patient("Alejandra", "alejandra@gmail.com");
         Patient patient2 = new Patient("Anahí", "anahi@gmail.com");
         System.out.println(patient);
-        System.out.println(patient2);
+        System.out.println(patient2);*/
     }
 }
