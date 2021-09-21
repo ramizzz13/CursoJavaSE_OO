@@ -6,14 +6,16 @@ public class Main {
     public static void main(String[] args) {
 
         //showMenu();
-        Doctor myDoctor = new Doctor("Ramiz Perez","Pediatria");
+        Doctor myDoctor = new Doctor("Ramiz Perez","ramiz@gmail.com");
         myDoctor.addAvailableAppointment(new Date(), "4:00 PM");
         myDoctor.addAvailableAppointment(new Date(), "10:00 AM");
         myDoctor.addAvailableAppointment(new Date(), "1:00 PM");
 
-        for (Doctor.AvailableAppointment aA : myDoctor.getAvailableAppointments()) {
+        System.out.println(myDoctor);
+
+       /* for (Doctor.AvailableAppointment aA : myDoctor.getAvailableAppointments()) {
             System.out.println(aA.getDate() + " " + aA.getTime());
-        }
+        }*/
 
 
         System.out.println();
