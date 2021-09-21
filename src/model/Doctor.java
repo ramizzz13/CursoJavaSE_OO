@@ -13,8 +13,6 @@ public class Doctor extends User {
 
     public Doctor(String name, String email){
         super(name, email);
-        System.out.println("El nombre del model.Doctor asignado es: " +name);
-        this.speciality = speciality;
     }
 
     public String getSpeciality() {
@@ -49,7 +47,7 @@ public class Doctor extends User {
         private int id;
         private Date date;
         private String time;
-        SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 
         public int getId() {
             return id;
